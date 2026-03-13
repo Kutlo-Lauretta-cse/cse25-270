@@ -1,5 +1,5 @@
 nav {
-    background-color: black;
+    background-color: yellow;
     padding: 10px;
 }
 
@@ -11,6 +11,6 @@ nav a {
 }
 
 nav a:hover {
-    color: gray;
+    color: blue;
 }
 
