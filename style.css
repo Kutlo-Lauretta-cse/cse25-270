@@ -1,4 +1,7 @@
-nav {
+img {
+    border-radius: 8px;
+    margin: 10px;
+}nav {
     background-color: yellow;
     padding: 10px;
 }
