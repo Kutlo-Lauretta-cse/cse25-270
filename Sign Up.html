@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Pula Scholars | Sign Up</title>
+</head>
+<body>
 
+    <header>
+        <nav>
+            <strong>PULA SCHOLARS</strong>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="scholarships.html">Scholarships</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+            <span> | </span>
+            <a href="signup.html"><strong>Sign Up</strong></a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h1>Create Your Student Account</h1>
+            <p>Join thousands of Batswana students tracking their scholarship applications.</p>
+        </section>
+
+        <br>
+
+        <section id="registration-form">
+            <form action="dashboard.html" method="GET">
+                <fieldset>
+                    <legend><h3>Personal Details</h3></legend>
+                    
+                    <label for="fullname">Full Name (as it appears on Omang):</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="password">Create Password:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <label for="omang">Omang / ID Number:</label><br>
+                    <input type="text" id="omang" name="omang" placeholder="000000000"><br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><h3>Educational Interest</h3></legend>
+                    <p>Which path are you most interested in?</p>
+                    <input type="radio" id="dtef-opt" name="path" value="dtef">
+                    <label for="dtef-opt">Local (DTEF) Sponsorship</label><br>
+                    
+                    <input type="radio" id="intl-opt" name="path" value="intl">
+                    <label for="intl-opt">International / UK Grants</label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit"><strong>Create My Account</strong></button>
+            </form>
+        </section>
+
+        <br>
+
+        <section>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><strong>Pula Scholars Botswana</strong></p>
+        <p>Technical issues? Email us: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>&copy; 2026 Pula Scholars</p>
+    </footer>
+
+</body>
+</html>
