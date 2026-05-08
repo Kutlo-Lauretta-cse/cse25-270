@@ -1,2 +1,168 @@
 
-  
+        /* 1. FORCE THE BACKGROUND AND SHARP FONTS */
+        html, body {
+            background-color: #002147 !important; /* The PDF Navy Blue */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: #FFFFFF;
+            /* Sharp, non-blurry system font stack */
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 2. GREEN NAVIGATION BAR */
+        header {
+            background-color: #2E7D32 !important; 
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* 3. HOME PAGE CONTENT - LEFT ALIGNED */
+        main {
+            padding: 60px 40px;
+            text-align: left; /* Explicitly left-aligned */
+        }
+
+        h1 { font-size: 42px; margin-bottom: 10px; font-weight: 800; }
+        .subtitle { font-size: 18px; margin-bottom: 40px; color: #CCCCCC; }
+
+        /* 4. SCHOLARSHIP CARDS (From PDF Frame 1)[cite: 1] */
+        .card {
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+        }
+
+        .green-card { background-color: #2E7D32 !important; }
+        .red-card { background-color: #8B0000 !important; } /* UK Red[cite: 1] */
+
+        .card-content h3 { margin: 0 0 10px 0; font-size: 22px; }
+        .card-content p { margin: 5px 0; font-size: 15px; }
+
+        .view-btn {
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        /* 5. GREEN FOOTER[cite: 1] */
+        footer {
+            background-color: #2E7D32 !important;
+            padding: 30px 40px;
+            margin-top: auto;
+            font-size: 13px;
+        }
+
+        footer p { margin: 5px 0; }
+        footer a { color: #FFFFFF; text-decoration: underline; margin-right: 10px; }
+
+        /* 6. CENTERED LAYOUT (For Sign Up/Dashboard Only)[cite: 1] */
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .apply-btn {
+            background-color: #2E7D32;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="logo">PULA SCHOLARS</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Scholarships</a>
+            <a href="#">Apply</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- MAIN HOME CONTENT (Left Aligned)[cite: 1] -->
+    <main>
+        <h1>YOUR FUTURE OUR PRIDE</h1>
+        <p class="subtitle">Browse over 50+ verified scholarships for Botswana students</p>
+
+        <!-- Scholarship Section[cite: 1] -->
+        <div class="card green-card">
+            <div class="card-content">
+                <h3>DTEF Tertiary Sponsorship</h3>
+                <p>Government funding for local and international accredited institutions.</p>
+                <p><strong>Requirement:</strong> 36 Points | <strong>Closing:</strong> 31 July 2026</p>
+            </div>
+            <a href="#" class="view-btn">VIEW DETAILS</a>
+        </div>
+
+        <div class="card green-card">
+            <div class="card-content">
+                <h3>Top Achievers Scholarship</h3>
+                <p>This is for the best students in the country.</p>
+                <p><strong>Requirement:</strong> 6 A Grades or better.</p>
+                <p><strong>Closing:</strong> 31 July 2026</p>
+            </div>
+            <a href="#" class="view-btn">VIEW DETAILS</a>
+        </div>
+
+        <div class="card red-card">
+            <div class="card-content">
+                <h3>Chevening Scholarship (UK)</h3>
+                <p>Fully funded Master's degree in the United Kingdom.</p>
+                <p><strong>Requirement:</strong> Bachelor's Degree with 2:1 or higher.</p>
+                <p><strong>Closing:</strong> November 2026</p>
+            </div>
+            <a href="#" class="view-btn">VIEW DETAILS</a>
+        </div>
+
+        <a href="#" class="apply-btn">APPLY NOW</a>
+    </main>
+
+    <!-- FOOTER[cite: 1] -->
+    <footer>
+        <p><strong>PULA SCHOLARS BOTSWANA</strong></p>
+        <p>Email: info@pulascholars.com | Gaborone, Botswana</p>
+        <p>&copy; 2026 Pula Scholars. All rights reserved.</p>
+        <p>
+            <a href="#">Home</a> | <a href="#">Scholarships</a> | <a href="#">Apply</a> | 
+            <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Sign Up</a>
+        </p>
+    </footer>
+
+</body>
+</html> 
