@@ -83,6 +83,31 @@ header .container-fluid {
     margin-bottom: 20px;
     text-align: center;
 }
+/* 1. FOR PHONES (Small screens) */
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column !important; /* Stack links vertically */
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+/* 2. FOR TABLETS (Medium screens) */
+@media (min-width: 577px) and (max-width: 991px) {
+    /* Add specific adjustments for tablets here */
+    .nav-logo {
+        width: 40px !important;
+    }
+}
+
+/* 3. FOR LAPTOPS/DESKTOPS (Large screens) */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 0 50px !important; /* Add more space on big screens */
+    }
+}
 
 /* --- 5. FOOTER (GREEN) --- */
 footer {
