@@ -35,10 +35,10 @@ header .container-fluid {
 }
 
 .nav-logo {
-    height: 50px !important; 
-    width: auto !important;
-    max-height: 50px;
+    width: 60px !important;  /* Adjust this number (e.g., 50px, 80px) to get the perfect size */
+    height: auto !important;
     display: block;
+}
 }
 /* Force nav links to be white and normal weight */
 .navbar .nav-link {
