@@ -1,10 +1,4 @@
-/**
- * PULA SCHOLARS - MASTER SCRIPT
- * Organized by Page & Functionality
- */
 
-// --- 0. SCHOLARSHIP SEARCH FILTER (GLOBAL) ---
-// This function must be outside the DOMContentLoaded to be seen by the HTML
 window.filterScholarships = function(query) {
     const searchTerm = query.toLowerCase();
     const local = document.getElementById('local');
