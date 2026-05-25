@@ -1,137 +1,182 @@
-/* --- 1. THEME COLORS --- */
-:root {
-    --bg-navy: #001f3f;
-    --nav-footer-green: #2E7D32; 
-    --uk-red: #8B0000;          
-    --white: #ffffff;
-}
-
-body {
-    background-color: var(--bg-navy) !important;
-    color: var(--white) !important;
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-}
-
-/* --- 2. NAVIGATION (GREEN) --- */
-header, .navbar {
-    background-color: var(--nav-footer-green) !important;
-    border-bottom: 2px solid var(--white);
-    padding: 10px 0;
-}
-/* Force the navigation to align left next to the logo */
-.navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    margin-left: 20px !important; /* Adds space between logo and links */
-    margin-right: auto !important; /* Prevents pushing to the right */
-}
-
-/* Ensure the header container acts normally */
-header .container-fluid {
-    display: flex !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-}
-
-.nav-logo {
-    width: 60px !important;  /* Adjust this number (e.g., 50px, 80px) to get the perfect size */
-    height: auto !important;
-    display: block;
-}
-}
-/* Force nav links to be white and normal weight */
-.navbar .nav-link {
-    color: #ffffff !important;
-    font-weight: normal !important;
-}
-
-/* Optional: Keep the hover effect gold */
-.navbar .nav-link:hover {
-    color: #FFD700 !important;
-}
 
 
-/* --- 3. HERO SECTION (UPDATED) --- */
-.hero-section {
-    position: relative;
-    padding: 100px 20px;
-    /* The gradient overlay keeps the text readable */
-    background-image: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('graduation.jfif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    color: white; /* Ensures text stays white */
-    margin-bottom: 30px;
-    text-align: center;
-}
+        html, body {
+            background-color: #002147 !important; 
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: #FFFFFF;
+            /* Sharp, non-blurry system font stack */
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
 
-/* --- 4. SCHOLARSHIP SECTIONS --- */
-#local {
-    background-color: var(--nav-footer-green) !important;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+        /* 2. GREEN NAVIGATION BAR */
+        header {
+            background-color: #2E7D32 !important; 
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+             body { background-color: #002147; color: white; }
+            header { background-color: #2E7D32; }
+            .navbar a { color: white !important; text-decoration: none; font-weight: medium; }
+        }
 
-#international {
-    background-color: var(--uk-red) !important;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-/* 1. FOR PHONES (Small screens) */
-@media (max-width: 576px) {
-    .navbar-nav {
-        flex-direction: column !important; /* Stack links vertically */
-        text-align: center;
-    }
-    footer {
-        text-align: center;
-    }
-}
+        .logo { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
 
-/* 2. FOR TABLETS (Medium screens) */
-@media (min-width: 577px) and (max-width: 991px) {
-    /* Add specific adjustments for tablets here */
-    .nav-logo {
-        width: 40px !important;
-    }
-}
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
 
-/* 3. FOR LAPTOPS/DESKTOPS (Large screens) */
-@media (min-width: 992px) {
-    .navbar {
-        padding: 0 50px !important; /* Add more space on big screens */
-    }
-}
+        /* 3. HOME PAGE CONTENT - LEFT ALIGNED */
+        main {
+            padding: 60px 40px;
+            text-align: left; /* Explicitly left-aligned */
+        }
 
-/* --- 5. FOOTER (GREEN) --- */
-footer {
-    background-color: var(--nav-footer-green) !important;
-    color: var(--white) !important;
-    padding: 30px;
-    margin-top: 50px;
-    text-align: center;
-}
+        h1 { font-size: 42px; margin-bottom: 10px; font-weight: 800; }
+        .subtitle { font-size: 18px; margin-bottom: 40px; color: #CCCCCC; }
 
-footer a {
-    color: var(--white) !important;
-    text-decoration: underline;
-}
-/* Style the mobile menu background when it opens */
-.navbar-collapse {
-    background-color: #2E7D32; /* Matches your brand color */
-    padding: 20px;
-    border-radius: 0 0 15px 15px;
-}
+        /* 4. SCHOLARSHIP CARDS (From PDF Frame 1)[cite: 1] */
+        .card {
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+        }
 
-/* Make the links inside the mobile menu bigger and easier to tap */
-.navbar-nav .nav-link {
-    color: white !important;
-    font-size: 18px;
-    padding: 10px !important;
-}
+        .green-card { background-color: #2E7D32 !important; }
+        .red-card { background-color: #8B0000 !important; } /* UK Red[cite: 1] */
+
+        .card-content h3 { margin: 0 0 10px 0; font-size: 22px; }
+        .card-content p { margin: 5px 0; font-size: 15px; }
+
+        .view-btn {
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+         /* Adding this just to make sure your images fit the page properly */
+            .uk-image {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 10px;
+                display: block;
+            }
+
+        /* 5. GREEN FOOTER[cite: 1] */
+        footer {
+            background-color: #2E7D32 !important;
+            padding: 30px 40px;
+            margin-top: auto;
+            font-size: 13px;
+        }
+
+        footer p { margin: 5px 0; }
+        footer a { color: #FFFFFF; text-decoration: underline; margin-right: 10px; }
+
+        /* 6. CENTERED LAYOUT (For Sign Up/Dashboard Only)[cite: 1] */
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .apply-btn {
+            background-color: #2E7D32;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="logo">PULA SCHOLARS</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Scholarships</a>
+            <a href="#">Apply</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- MAIN HOME CONTENT (Left Aligned)[cite: 1] -->
+    <main>
+        <h1>YOUR FUTURE OUR PRIDE</h1>
+        <p class="subtitle">Browse over 50+ verified scholarships for Botswana students</p>
+
+        <!-- Scholarship Section[cite: 1] -->
+        <div class="card green-card">
+            <div class="card-content">
+                <h3>DTEF Tertiary Sponsorship</h3>
+                <p>Government funding for local and international accredited institutions.</p>
+                <p><strong>Requirement:</strong> 36 Points | <strong>Closing:</strong> 31 July 2026</p>
+            </div>
+            <a href="#" class="view-btn">VIEW DETAILS</a>
+        </div>
+
+        <div class="card green-card">
+            <div class="card-content">
+                <h3>Top Achievers Scholarship</h3>
+                <p>This is for the best students in the country.</p>
+                <p><strong>Requirement:</strong> 6 A Grades or better.</p>
+                <p><strong>Closing:</strong> 31 July 2026</p>
+            </div>
+            <a href="#" class="view-btn">VIEW DETAILS</a>
+        </div>
+
+        <div class="card red-card">
+            <div class="card-content">
+                <h3>Chevening Scholarship (UK)</h3>
+                <p>Fully funded Master's degree in the United Kingdom.</p>
+                <p><strong>Requirement:</strong> Bachelor's Degree with 2:1 or higher.</p>
+                <p><strong>Closing:</strong> November 2026</p>
+            </div>
+            <a href="#" class="view-btn">VIEW DETAILS</a>
+        </div>
+
+        <a href="#" class="apply-btn">APPLY NOW</a>
+    </main>
+
+    FOOTER
+    <footer>
+        <p><strong>PULA SCHOLARS BOTSWANA</strong></p>
+        <p>Email: info@pulascholars.com | Gaborone, Botswana</p>
+        <p>&copy; 2026 Pula Scholars. All rights reserved.</p>
+        <p>
+            <a href="#">Home</a> | <a href="#">Scholarships</a> | <a href="#">Apply</a> | 
+            <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Sign Up</a>
+        </p>
+    </footer>
+
+</body>
+</html> 
